@@ -6,6 +6,8 @@
 
 '''
 
+import sys
+sys.path.append("./")
 
 #执行用例，生成测试报告
 import unittest
