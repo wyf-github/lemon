@@ -1,0 +1,235 @@
+[2019-03-14 22:30:20,382]-[INFO]-[日志信息]:娃哈哈  乌漆嘛黑的！
+[2019-03-14 22:40:39,024]-[INFO]-[日志信息]:正在测试register模块中的第1条用例，测试标题是正常注册
+[2019-03-14 22:40:39,140]-[ERROR]-[日志信息]:请求用例出错了，错误是:{'data': None, 'msg': '注册成功', 'code': '10001', 'status': 1} != {'data': None, 'msg': '手机号码已被注册', 'code': '20110', 'status': 0}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ---                           --             ^
+
++ {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+?           +++                           ++++++               ^
+
+[2019-03-14 22:40:39,222]-[INFO]-[日志信息]:正在测试register模块中的第2条用例，测试标题是不输入用户名注册
+[2019-03-14 22:40:39,356]-[ERROR]-[日志信息]:请求用例出错了，错误是:{'data': None, 'msg': '注册成功', 'code': '10001', 'status': 1} != {'data': None, 'msg': '手机号码已被注册', 'code': '20110', 'status': 0}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ---                           --             ^
+
++ {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+?           +++                           ++++++               ^
+
+[2019-03-14 22:40:39,430]-[INFO]-[日志信息]:正在测试register模块中的第3条用例，测试标题是不输入手机号注册
+[2019-03-14 22:40:39,705]-[INFO]-[日志信息]:实际结果是:{'data': None, 'msg': '手机号不能为空', 'code': '20103', 'status': 0}
+[2019-03-14 22:40:39,707]-[INFO]-[日志信息]:正在测试register模块中的第4条用例，测试标题是输入错误格式的手机号
+[2019-03-14 22:40:40,073]-[INFO]-[日志信息]:实际结果是:{'data': None, 'msg': '手机号码格式不正确', 'code': '20109', 'status': 0}
+[2019-03-14 22:40:40,074]-[INFO]-[日志信息]:正在测试register模块中的第5条用例，测试标题是输入已经注册的手机号
+[2019-03-14 22:40:40,354]-[INFO]-[日志信息]:实际结果是:{'data': None, 'msg': '手机号码已被注册', 'code': '20110', 'status': 0}
+[2019-03-14 22:40:40,356]-[INFO]-[日志信息]:正在测试login模块中的第6条用例，测试标题是正常登录
+[2019-03-14 22:40:40,687]-[INFO]-[日志信息]:实际结果是:{'data': None, 'msg': '登录成功', 'code': '10001', 'status': 1}
+[2019-03-14 22:40:40,688]-[INFO]-[日志信息]:正在测试login模块中的第7条用例，测试标题是不输入手机号登录
+[2019-03-14 22:40:41,026]-[INFO]-[日志信息]:实际结果是:{'data': None, 'msg': '手机号不能为空', 'code': '20103', 'status': 0}
+[2019-03-14 22:40:41,027]-[INFO]-[日志信息]:正在测试login模块中的第8条用例，测试标题是输入错误格式的手机号登录
+[2019-03-14 22:40:41,396]-[INFO]-[日志信息]:实际结果是:{'data': None, 'msg': '用户名或密码错误', 'code': '20111', 'status': 0}
+[2019-03-14 22:40:41,399]-[INFO]-[日志信息]:正在测试login模块中的第9条用例，测试标题是输入错误格式的密码登录
+[2019-03-14 22:40:41,873]-[INFO]-[日志信息]:实际结果是:{'data': None, 'msg': '用户名或密码错误', 'code': '20111', 'status': 0}
+[2019-03-18 11:43:39,131]-[INFO]-[日志信息]:正在测试register模块中的第1条用例，测试标题是正常注册
+[2019-03-18 11:43:39,134]-[INFO]-[日志信息]:测试数据是{'id': 1, 'module': 'register', 'title': '正常注册', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'param': '{"mobilephone":"18813989999","pwd":"123456","regname":"lemonhuahua"}', 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-03-18 11:43:39,251]-[ERROR]-[日志信息]:请求用例出错了，错误是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20110', 'data': None, 'msg': '手机号码已被注册'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ---                           --             ^
+
++ {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+?           +++                           ++++++               ^
+
+[2019-03-18 11:43:39,598]-[INFO]-[日志信息]:正在测试register模块中的第2条用例，测试标题是不输入用户名注册
+[2019-03-18 11:43:39,599]-[INFO]-[日志信息]:测试数据是{'id': 2, 'module': 'register', 'title': '不输入用户名注册', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'param': '{"mobilephone":"18813989998","pwd":"123456","regname":""}', 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-03-18 11:43:39,699]-[ERROR]-[日志信息]:请求用例出错了，错误是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20110', 'data': None, 'msg': '手机号码已被注册'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ---                           --             ^
+
++ {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+?           +++                           ++++++               ^
+
+[2019-03-18 11:43:39,781]-[INFO]-[日志信息]:正在测试register模块中的第3条用例，测试标题是不输入手机号注册
+[2019-03-18 11:43:39,783]-[INFO]-[日志信息]:测试数据是{'id': 3, 'module': 'register', 'title': '不输入手机号注册', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'param': '{"mobilephone":"","pwd":"123456","regname":"feifei"}', 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-03-18 11:43:39,981]-[INFO]-[日志信息]:实际结果是:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+[2019-03-18 11:43:39,982]-[INFO]-[日志信息]:正在测试register模块中的第4条用例，测试标题是输入错误格式的手机号
+[2019-03-18 11:43:39,983]-[INFO]-[日志信息]:测试数据是{'id': 4, 'module': 'register', 'title': '输入错误格式的手机号', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'param': '{"mobilephone":"188139890","pwd":"123456","regname":"lemonhuahua"}', 'ExpectedResult': '{"status":0,"code":"20109","data":None,"msg":"手机号码格式不正确"}'}
+[2019-03-18 11:43:40,492]-[INFO]-[日志信息]:实际结果是:{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+[2019-03-18 17:45:10,821]-[INFO]-[日志信息]:正在测试register模块中的第1条用例，测试标题是正常注册
+[2019-03-18 17:45:10,824]-[INFO]-[日志信息]:测试数据是{'id': 1, 'module': 'register', 'title': '正常注册', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'param': '{"mobilephone":"18813989999","pwd":"123456","regname":"lemonhuahua"}', 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-03-18 17:45:10,929]-[ERROR]-[日志信息]:请求用例出错了，错误是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20110', 'data': None, 'msg': '手机号码已被注册'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ---                           --             ^
+
++ {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+?           +++                           ++++++               ^
+
+[2019-03-18 17:45:11,137]-[INFO]-[日志信息]:正在测试register模块中的第2条用例，测试标题是不输入用户名注册
+[2019-03-18 17:45:11,139]-[INFO]-[日志信息]:测试数据是{'id': 2, 'module': 'register', 'title': '不输入用户名注册', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'param': '{"mobilephone":"18813989998","pwd":"123456","regname":""}', 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-03-18 17:45:11,225]-[ERROR]-[日志信息]:请求用例出错了，错误是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20110', 'data': None, 'msg': '手机号码已被注册'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ---                           --             ^
+
++ {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+?           +++                           ++++++               ^
+
+[2019-03-18 17:45:11,264]-[INFO]-[日志信息]:正在测试register模块中的第3条用例，测试标题是不输入手机号注册
+[2019-03-18 17:45:11,266]-[INFO]-[日志信息]:测试数据是{'id': 3, 'module': 'register', 'title': '不输入手机号注册', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'param': '{"mobilephone":"","pwd":"123456","regname":"feifei"}', 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-03-18 17:45:11,419]-[INFO]-[日志信息]:正在测试register模块中的第4条用例，测试标题是输入错误格式的手机号
+[2019-03-18 17:45:11,420]-[INFO]-[日志信息]:测试数据是{'id': 4, 'module': 'register', 'title': '输入错误格式的手机号', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'param': '{"mobilephone":"188139890","pwd":"123456","regname":"lemonhuahua"}', 'ExpectedResult': '{"status":0,"code":"20109","data":None,"msg":"手机号码格式不正确"}'}
+[2019-03-18 17:45:11,539]-[INFO]-[日志信息]:正在测试register模块中的第5条用例，测试标题是输入已经注册的手机号
+[2019-03-18 17:45:11,540]-[INFO]-[日志信息]:测试数据是{'id': 5, 'module': 'register', 'title': '输入已经注册的手机号', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'param': '{"mobilephone":"18813989009","pwd":"123456","regname":"lemonhuahua"}', 'ExpectedResult': '{"status":0,"code":"20110","data":None,"msg":"手机号码已被注册"}'}
+[2019-03-18 17:45:11,691]-[INFO]-[日志信息]:正在测试login模块中的第6条用例，测试标题是正常登录
+[2019-03-18 17:45:11,692]-[INFO]-[日志信息]:测试数据是{'id': 6, 'module': 'login', 'title': '正常登录', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'param': '{"mobilephone":"18813989999","pwd":"123456"}', 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"登录成功"}'}
+[2019-03-18 17:45:11,814]-[INFO]-[日志信息]:正在测试login模块中的第7条用例，测试标题是不输入手机号登录
+[2019-03-18 17:45:11,816]-[INFO]-[日志信息]:测试数据是{'id': 7, 'module': 'login', 'title': '不输入手机号登录', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'param': '{"mobilephone":"","pwd":"123456"}', 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-03-18 17:45:11,935]-[INFO]-[日志信息]:正在测试login模块中的第8条用例，测试标题是输入错误格式的手机号登录
+[2019-03-18 17:45:11,936]-[INFO]-[日志信息]:测试数据是{'id': 8, 'module': 'login', 'title': '输入错误格式的手机号登录', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'param': '{"mobilephone":"1881398999911","pwd":"123456"}', 'ExpectedResult': '{"status":0,"code":"20111","data":None,"msg":"用户名或密码错误"}'}
+[2019-03-18 17:45:12,055]-[INFO]-[日志信息]:正在测试login模块中的第9条用例，测试标题是输入错误格式的密码登录
+[2019-03-18 17:45:12,056]-[INFO]-[日志信息]:测试数据是{'id': 9, 'module': 'login', 'title': '输入错误格式的密码登录', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'param': '{"mobilephone":"18813989999","pwd":"12345"}', 'ExpectedResult': '{"status":0,"code":"20111","data":None,"msg":"用户名或密码错误"}'}
+[2019-03-18 17:45:23,233]-[INFO]-[日志信息]:正在测试register模块中的第1条用例，测试标题是正常注册
+[2019-03-18 17:45:23,235]-[INFO]-[日志信息]:测试数据是{'id': 1, 'module': 'register', 'title': '正常注册', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'param': '{"mobilephone":"18813989999","pwd":"123456","regname":"lemonhuahua"}', 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-03-18 17:45:23,334]-[ERROR]-[日志信息]:请求用例出错了，错误是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20110', 'data': None, 'msg': '手机号码已被注册'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ---                           --             ^
+
++ {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+?           +++                           ++++++               ^
+
+[2019-03-18 17:45:23,372]-[INFO]-[日志信息]:正在测试register模块中的第2条用例，测试标题是不输入用户名注册
+[2019-03-18 17:45:23,373]-[INFO]-[日志信息]:测试数据是{'id': 2, 'module': 'register', 'title': '不输入用户名注册', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'param': '{"mobilephone":"18813989998","pwd":"123456","regname":""}', 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-03-18 17:45:23,462]-[ERROR]-[日志信息]:请求用例出错了，错误是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20110', 'data': None, 'msg': '手机号码已被注册'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ---                           --             ^
+
++ {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+?           +++                           ++++++               ^
+
+[2019-03-18 17:45:23,488]-[INFO]-[日志信息]:正在测试register模块中的第3条用例，测试标题是不输入手机号注册
+[2019-03-18 17:45:23,489]-[INFO]-[日志信息]:测试数据是{'id': 3, 'module': 'register', 'title': '不输入手机号注册', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'param': '{"mobilephone":"","pwd":"123456","regname":"feifei"}', 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-03-18 17:45:23,621]-[INFO]-[日志信息]:正在测试register模块中的第4条用例，测试标题是输入错误格式的手机号
+[2019-03-18 17:45:23,623]-[INFO]-[日志信息]:测试数据是{'id': 4, 'module': 'register', 'title': '输入错误格式的手机号', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'param': '{"mobilephone":"188139890","pwd":"123456","regname":"lemonhuahua"}', 'ExpectedResult': '{"status":0,"code":"20109","data":None,"msg":"手机号码格式不正确"}'}
+[2019-03-18 17:45:23,744]-[INFO]-[日志信息]:正在测试register模块中的第5条用例，测试标题是输入已经注册的手机号
+[2019-03-18 17:45:23,745]-[INFO]-[日志信息]:测试数据是{'id': 5, 'module': 'register', 'title': '输入已经注册的手机号', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'param': '{"mobilephone":"18813989009","pwd":"123456","regname":"lemonhuahua"}', 'ExpectedResult': '{"status":0,"code":"20110","data":None,"msg":"手机号码已被注册"}'}
+[2019-03-18 17:45:23,859]-[INFO]-[日志信息]:正在测试login模块中的第6条用例，测试标题是正常登录
+[2019-03-18 17:45:23,860]-[INFO]-[日志信息]:测试数据是{'id': 6, 'module': 'login', 'title': '正常登录', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'param': '{"mobilephone":"18813989999","pwd":"123456"}', 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"登录成功"}'}
+[2019-03-18 17:45:23,974]-[INFO]-[日志信息]:正在测试login模块中的第7条用例，测试标题是不输入手机号登录
+[2019-03-18 17:45:23,975]-[INFO]-[日志信息]:测试数据是{'id': 7, 'module': 'login', 'title': '不输入手机号登录', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'param': '{"mobilephone":"","pwd":"123456"}', 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-03-18 17:45:24,088]-[INFO]-[日志信息]:正在测试login模块中的第8条用例，测试标题是输入错误格式的手机号登录
+[2019-03-18 17:45:24,089]-[INFO]-[日志信息]:测试数据是{'id': 8, 'module': 'login', 'title': '输入错误格式的手机号登录', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'param': '{"mobilephone":"1881398999911","pwd":"123456"}', 'ExpectedResult': '{"status":0,"code":"20111","data":None,"msg":"用户名或密码错误"}'}
+[2019-03-18 17:45:24,204]-[INFO]-[日志信息]:正在测试login模块中的第9条用例，测试标题是输入错误格式的密码登录
+[2019-03-18 17:45:24,205]-[INFO]-[日志信息]:测试数据是{'id': 9, 'module': 'login', 'title': '输入错误格式的密码登录', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'param': '{"mobilephone":"18813989999","pwd":"12345"}', 'ExpectedResult': '{"status":0,"code":"20111","data":None,"msg":"用户名或密码错误"}'}
+[2019-03-18 17:46:13,566]-[INFO]-[日志信息]:正在测试register模块中的第1条用例，测试标题是正常注册
+[2019-03-18 17:46:13,569]-[INFO]-[日志信息]:测试数据是{'id': 1, 'module': 'register', 'title': '正常注册', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'param': '{"mobilephone":"18813989999","pwd":"123456","regname":"lemonhuahua"}', 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-03-18 17:46:13,711]-[ERROR]-[日志信息]:请求用例出错了，错误是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20110', 'data': None, 'msg': '手机号码已被注册'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ---                           --             ^
+
++ {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+?           +++                           ++++++               ^
+
+[2019-03-18 17:46:13,952]-[INFO]-[日志信息]:正在测试register模块中的第2条用例，测试标题是不输入用户名注册
+[2019-03-18 17:46:13,954]-[INFO]-[日志信息]:测试数据是{'id': 2, 'module': 'register', 'title': '不输入用户名注册', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'param': '{"mobilephone":"18813989998","pwd":"123456","regname":""}', 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-03-18 17:46:14,066]-[ERROR]-[日志信息]:请求用例出错了，错误是:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'} != {'status': 0, 'code': '20110', 'data': None, 'msg': '手机号码已被注册'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ---                           --             ^
+
++ {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+?           +++                           ++++++               ^
+
+[2019-03-18 17:46:14,307]-[INFO]-[日志信息]:正在测试register模块中的第3条用例，测试标题是不输入手机号注册
+[2019-03-18 17:46:14,309]-[INFO]-[日志信息]:测试数据是{'id': 3, 'module': 'register', 'title': '不输入手机号注册', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'param': '{"mobilephone":"","pwd":"123456","regname":"feifei"}', 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-03-18 17:46:14,673]-[INFO]-[日志信息]:正在测试register模块中的第4条用例，测试标题是输入错误格式的手机号
+[2019-03-18 17:46:14,675]-[INFO]-[日志信息]:测试数据是{'id': 4, 'module': 'register', 'title': '输入错误格式的手机号', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'param': '{"mobilephone":"188139890","pwd":"123456","regname":"lemonhuahua"}', 'ExpectedResult': '{"status":0,"code":"20109","data":None,"msg":"手机号码格式不正确"}'}
+[2019-03-18 17:46:15,015]-[INFO]-[日志信息]:正在测试register模块中的第5条用例，测试标题是输入已经注册的手机号
+[2019-03-18 17:46:15,018]-[INFO]-[日志信息]:测试数据是{'id': 5, 'module': 'register', 'title': '输入已经注册的手机号', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'param': '{"mobilephone":"18813989009","pwd":"123456","regname":"lemonhuahua"}', 'ExpectedResult': '{"status":0,"code":"20110","data":None,"msg":"手机号码已被注册"}'}
+[2019-03-18 17:46:15,373]-[INFO]-[日志信息]:正在测试login模块中的第6条用例，测试标题是正常登录
+[2019-03-18 17:46:15,377]-[INFO]-[日志信息]:测试数据是{'id': 6, 'module': 'login', 'title': '正常登录', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'param': '{"mobilephone":"18813989999","pwd":"123456"}', 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"登录成功"}'}
+[2019-03-18 17:46:15,742]-[INFO]-[日志信息]:正在测试login模块中的第7条用例，测试标题是不输入手机号登录
+[2019-03-18 17:46:15,744]-[INFO]-[日志信息]:测试数据是{'id': 7, 'module': 'login', 'title': '不输入手机号登录', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'param': '{"mobilephone":"","pwd":"123456"}', 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-03-18 17:46:16,100]-[INFO]-[日志信息]:正在测试login模块中的第8条用例，测试标题是输入错误格式的手机号登录
+[2019-03-18 17:46:16,102]-[INFO]-[日志信息]:测试数据是{'id': 8, 'module': 'login', 'title': '输入错误格式的手机号登录', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'param': '{"mobilephone":"1881398999911","pwd":"123456"}', 'ExpectedResult': '{"status":0,"code":"20111","data":None,"msg":"用户名或密码错误"}'}
+[2019-03-18 17:46:16,426]-[INFO]-[日志信息]:正在测试login模块中的第9条用例，测试标题是输入错误格式的密码登录
+[2019-03-18 17:46:16,430]-[INFO]-[日志信息]:测试数据是{'id': 9, 'module': 'login', 'title': '输入错误格式的密码登录', 'method': 'post', 'url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/login', 'param': '{"mobilephone":"18813989999","pwd":"12345"}', 'ExpectedResult': '{"status":0,"code":"20111","data":None,"msg":"用户名或密码错误"}'}
+[2019-03-25 16:34:43,282]-[INFO]-[日志信息]:正在测试Register模块中的第1条用例，测试标题是正常注册
+[2019-03-25 16:34:43,299]-[INFO]-[日志信息]:测试数据是{'id': 1, 'module': 'Register', 'title': '正常注册', 'method': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'url': 'get', 'param': "{'mobilephone':'15096098930','pwd':'123456'}", 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'注册成功'}"}
+[2019-03-25 16:34:43,305]-[INFO]-[日志信息]:正在测试Register模块中的第2条用例，测试标题是不输入手机号
+[2019-03-25 16:34:43,308]-[INFO]-[日志信息]:测试数据是{'id': 2, 'module': 'Register', 'title': '不输入手机号', 'method': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'url': 'post', 'param': "{'mobilephone':'','pwd':'123456'}", 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'手机号不能为空'}"}
+[2019-03-25 16:34:43,314]-[INFO]-[日志信息]:正在测试Register模块中的第3条用例，测试标题是不输入密码
+[2019-03-25 16:34:43,317]-[INFO]-[日志信息]:测试数据是{'id': 3, 'module': 'Register', 'title': '不输入密码', 'method': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'url': 'get', 'param': "{'mobilephone':'18688775656','pwd':''}", 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'密码不能为空'}"}
+[2019-03-25 16:34:43,324]-[INFO]-[日志信息]:正在测试Register模块中的第4条用例，测试标题是输入已存在的手机号
+[2019-03-25 16:34:43,327]-[INFO]-[日志信息]:测试数据是{'id': 4, 'module': 'Register', 'title': '输入已存在的手机号', 'method': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'url': 'post', 'param': "{'mobilephone':'18688775656','pwd':'123456'}", 'ExpectedResult': "{'status':0,'code':'20110','data': None,'msg':'手机号码已被注册'}"}
+[2019-03-25 16:34:43,333]-[INFO]-[日志信息]:正在测试Register模块中的第5条用例，测试标题是输入错误的手机号
+[2019-03-25 16:34:43,346]-[INFO]-[日志信息]:测试数据是{'id': 5, 'module': 'Register', 'title': '输入错误的手机号', 'method': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'url': 'get', 'param': "{'mobilephone':'186887756569','pwd':'123456'}", 'ExpectedResult': "{'status':0,'code':'20109','data': None,'msg':'手机号码格式不正确'}"}
+[2019-03-25 16:38:26,021]-[INFO]-[日志信息]:正在测试Register模块中的第1条用例，测试标题是正常注册
+[2019-03-25 16:38:26,030]-[INFO]-[日志信息]:测试数据是{'id': 1, 'module': 'Register', 'title': '正常注册', 'method': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'url': 'get', 'param': "{'mobilephone':'15096098931','pwd':'123456'}", 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'注册成功'}"}
+[2019-03-25 16:38:26,038]-[INFO]-[日志信息]:正在测试Register模块中的第2条用例，测试标题是不输入手机号
+[2019-03-25 16:38:26,040]-[INFO]-[日志信息]:测试数据是{'id': 2, 'module': 'Register', 'title': '不输入手机号', 'method': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'url': 'post', 'param': "{'mobilephone':'','pwd':'123456'}", 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'手机号不能为空'}"}
+[2019-03-25 16:38:26,044]-[INFO]-[日志信息]:正在测试Register模块中的第3条用例，测试标题是不输入密码
+[2019-03-25 16:38:26,047]-[INFO]-[日志信息]:测试数据是{'id': 3, 'module': 'Register', 'title': '不输入密码', 'method': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'url': 'get', 'param': "{'mobilephone':'18688775656','pwd':''}", 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'密码不能为空'}"}
+[2019-03-25 16:38:26,053]-[INFO]-[日志信息]:正在测试Register模块中的第4条用例，测试标题是输入已存在的手机号
+[2019-03-25 16:38:26,055]-[INFO]-[日志信息]:测试数据是{'id': 4, 'module': 'Register', 'title': '输入已存在的手机号', 'method': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'url': 'post', 'param': "{'mobilephone':'18688775656','pwd':'123456'}", 'ExpectedResult': "{'status':0,'code':'20110','data': None,'msg':'手机号码已被注册'}"}
+[2019-03-25 16:38:26,060]-[INFO]-[日志信息]:正在测试Register模块中的第5条用例，测试标题是输入错误的手机号
+[2019-03-25 16:38:26,062]-[INFO]-[日志信息]:测试数据是{'id': 5, 'module': 'Register', 'title': '输入错误的手机号', 'method': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'url': 'get', 'param': "{'mobilephone':'186887756569','pwd':'123456'}", 'ExpectedResult': "{'status':0,'code':'20109','data': None,'msg':'手机号码格式不正确'}"}
+[2019-03-25 17:42:54,794]-[INFO]-[日志信息]:-------正在测试Register模块里面第1条测试用例：正常注册
+[2019-03-25 17:42:54,797]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'Register', 'Title': '正常注册', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15096098971','pwd':'123456'}", 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'注册成功'}"}
+[2019-03-25 17:42:54,978]-[INFO]-[日志信息]:-------正在测试Register模块里面第2条测试用例：不输入手机号
+[2019-03-25 17:42:54,979]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'Register', 'Title': '不输入手机号', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'123456'}", 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'手机号不能为空'}"}
+[2019-03-25 17:42:55,131]-[INFO]-[日志信息]:-------正在测试Register模块里面第3条测试用例：不输入密码
+[2019-03-25 17:42:55,132]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'Register', 'Title': '不输入密码', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':''}", 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'密码不能为空'}"}
+[2019-03-25 17:42:55,308]-[INFO]-[日志信息]:-------正在测试Register模块里面第4条测试用例：输入已存在的手机号
+[2019-03-25 17:42:55,309]-[INFO]-[日志信息]:测试数据是：{'CaseId': 4, 'Module': 'Register', 'Title': '输入已存在的手机号', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'18688775656','pwd':'123456'}", 'ExpectedResult': "{'status':0,'code':'20110','data': None,'msg':'手机号码已被注册'}"}
+[2019-03-25 17:42:55,503]-[INFO]-[日志信息]:-------正在测试Register模块里面第5条测试用例：输入错误的手机号
+[2019-03-25 17:42:55,504]-[INFO]-[日志信息]:测试数据是：{'CaseId': 5, 'Module': 'Register', 'Title': '输入错误的手机号', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'186887756569','pwd':'123456'}", 'ExpectedResult': "{'status':0,'code':'20109','data': None,'msg':'手机号码格式不正确'}"}
+[2019-03-25 17:44:21,248]-[INFO]-[日志信息]:-------正在测试Register模块里面第1条测试用例：正常注册
+[2019-03-25 17:44:21,249]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'Register', 'Title': '正常注册', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15096098974','pwd':'123456'}", 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'注册成功'}"}
+[2019-03-25 17:44:21,412]-[INFO]-[日志信息]:-------正在测试Register模块里面第2条测试用例：不输入手机号
+[2019-03-25 17:44:21,412]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'Register', 'Title': '不输入手机号', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'123456'}", 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'手机号不能为空'}"}
+[2019-03-25 17:44:21,561]-[INFO]-[日志信息]:-------正在测试Register模块里面第3条测试用例：不输入密码
+[2019-03-25 17:44:21,562]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'Register', 'Title': '不输入密码', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':''}", 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'密码不能为空'}"}
+[2019-03-25 17:44:21,737]-[INFO]-[日志信息]:-------正在测试Register模块里面第4条测试用例：输入已存在的手机号
+[2019-03-25 17:44:21,738]-[INFO]-[日志信息]:测试数据是：{'CaseId': 4, 'Module': 'Register', 'Title': '输入已存在的手机号', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'18688775656','pwd':'123456'}", 'ExpectedResult': "{'status':0,'code':'20110','data': None,'msg':'手机号码已被注册'}"}
+[2019-03-25 17:44:21,897]-[INFO]-[日志信息]:-------正在测试Register模块里面第5条测试用例：输入错误的手机号
+[2019-03-25 17:44:21,898]-[INFO]-[日志信息]:测试数据是：{'CaseId': 5, 'Module': 'Register', 'Title': '输入错误的手机号', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'186887756569','pwd':'123456'}", 'ExpectedResult': "{'status':0,'code':'20109','data': None,'msg':'手机号码格式不正确'}"}
+[2019-03-25 17:47:02,190]-[INFO]-[日志信息]:-------正在测试Register模块里面第1条测试用例：正常注册
+[2019-03-25 17:47:02,201]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'Register', 'Title': '正常注册', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15096098976','pwd':'123456'}", 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'注册成功'}"}
+[2019-03-25 17:47:02,354]-[INFO]-[日志信息]:-------正在测试Register模块里面第2条测试用例：不输入手机号
+[2019-03-25 17:47:02,355]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'Register', 'Title': '不输入手机号', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'123456'}", 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'手机号不能为空'}"}
+[2019-03-25 17:47:02,510]-[INFO]-[日志信息]:-------正在测试Register模块里面第3条测试用例：不输入密码
+[2019-03-25 17:47:02,512]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'Register', 'Title': '不输入密码', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':''}", 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'密码不能为空'}"}
+[2019-03-25 17:47:02,646]-[INFO]-[日志信息]:-------正在测试Register模块里面第4条测试用例：输入已存在的手机号
+[2019-03-25 17:47:02,647]-[INFO]-[日志信息]:测试数据是：{'CaseId': 4, 'Module': 'Register', 'Title': '输入已存在的手机号', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'18688775656','pwd':'123456'}", 'ExpectedResult': "{'status':0,'code':'20110','data': None,'msg':'手机号码已被注册'}"}
+[2019-03-25 17:47:02,782]-[INFO]-[日志信息]:-------正在测试Register模块里面第5条测试用例：输入错误的手机号
+[2019-03-25 17:47:02,783]-[INFO]-[日志信息]:测试数据是：{'CaseId': 5, 'Module': 'Register', 'Title': '输入错误的手机号', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'186887756569','pwd':'123456'}", 'ExpectedResult': "{'status':0,'code':'20109','data': None,'msg':'手机号码格式不正确'}"}
+[2019-03-25 17:47:52,591]-[INFO]-[日志信息]:-------正在测试Register模块里面第1条测试用例：正常注册
+[2019-03-25 17:47:52,605]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'Register', 'Title': '正常注册', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15096098977','pwd':'123456'}", 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'注册成功'}"}
+[2019-03-25 17:48:35,461]-[INFO]-[日志信息]:-------正在测试Register模块里面第1条测试用例：正常注册
+[2019-03-25 17:48:35,473]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'Register', 'Title': '正常注册', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15096098978','pwd':'123456'}", 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'注册成功'}"}
+[2019-03-25 17:56:09,367]-[INFO]-[日志信息]:-------正在测试Register模块里面第1条测试用例：正常注册
+[2019-03-25 17:56:09,380]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'Register', 'Title': '正常注册', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15096098979','pwd':'123456'}", 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'注册成功'}"}
+[2019-03-25 17:56:09,675]-[INFO]-[日志信息]:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+[2019-03-25 17:56:09,677]-[INFO]-[日志信息]:-------正在测试Register模块里面第2条测试用例：不输入手机号
+[2019-03-25 17:56:09,679]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'Register', 'Title': '不输入手机号', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'123456'}", 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'手机号不能为空'}"}
+[2019-03-25 17:56:09,919]-[INFO]-[日志信息]:实际结果：{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+[2019-03-25 17:56:09,922]-[INFO]-[日志信息]:-------正在测试Register模块里面第3条测试用例：不输入密码
+[2019-03-25 17:56:09,926]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'Register', 'Title': '不输入密码', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':''}", 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'密码不能为空'}"}
+[2019-03-25 17:56:10,225]-[INFO]-[日志信息]:实际结果：{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+[2019-03-25 17:56:10,228]-[INFO]-[日志信息]:-------正在测试Register模块里面第4条测试用例：输入已存在的手机号
+[2019-03-25 17:56:10,233]-[INFO]-[日志信息]:测试数据是：{'CaseId': 4, 'Module': 'Register', 'Title': '输入已存在的手机号', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'18688775656','pwd':'123456'}", 'ExpectedResult': "{'status':0,'code':'20110','data': None,'msg':'手机号码已被注册'}"}
+[2019-03-25 17:56:10,504]-[INFO]-[日志信息]:实际结果：{'status': 0, 'code': '20110', 'data': None, 'msg': '手机号码已被注册'}
+[2019-03-25 17:56:10,512]-[INFO]-[日志信息]:-------正在测试Register模块里面第5条测试用例：输入错误的手机号
+[2019-03-25 17:56:10,514]-[INFO]-[日志信息]:测试数据是：{'CaseId': 5, 'Module': 'Register', 'Title': '输入错误的手机号', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'186887756569','pwd':'123456'}", 'ExpectedResult': "{'status':0,'code':'20109','data': None,'msg':'手机号码格式不正确'}"}
+[2019-03-25 17:56:10,800]-[INFO]-[日志信息]:实际结果：{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
+[2019-03-25 17:56:25,757]-[INFO]-[日志信息]:-------正在测试Register模块里面第1条测试用例：正常注册
+[2019-03-25 17:56:25,758]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'Register', 'Title': '正常注册', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15096098981','pwd':'123456'}", 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'注册成功'}"}
+[2019-03-25 17:56:25,994]-[INFO]-[日志信息]:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+[2019-03-25 17:56:25,995]-[INFO]-[日志信息]:-------正在测试Register模块里面第2条测试用例：不输入手机号
+[2019-03-25 17:56:25,996]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'Register', 'Title': '不输入手机号', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'123456'}", 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'手机号不能为空'}"}
+[2019-03-25 17:56:26,292]-[INFO]-[日志信息]:实际结果：{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+[2019-03-25 17:56:26,294]-[INFO]-[日志信息]:-------正在测试Register模块里面第3条测试用例：不输入密码
+[2019-03-25 17:56:26,295]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'Register', 'Title': '不输入密码', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':''}", 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'密码不能为空'}"}
+[2019-03-25 17:56:26,513]-[INFO]-[日志信息]:实际结果：{'status': 0, 'code': '20103', 'data': None, 'msg': '密码不能为空'}
+[2019-03-25 17:56:26,515]-[INFO]-[日志信息]:-------正在测试Register模块里面第4条测试用例：输入已存在的手机号
+[2019-03-25 17:56:26,516]-[INFO]-[日志信息]:测试数据是：{'CaseId': 4, 'Module': 'Register', 'Title': '输入已存在的手机号', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'18688775656','pwd':'123456'}", 'ExpectedResult': "{'status':0,'code':'20110','data': None,'msg':'手机号码已被注册'}"}
+[2019-03-25 17:56:26,727]-[INFO]-[日志信息]:实际结果：{'status': 0, 'code': '20110', 'data': None, 'msg': '手机号码已被注册'}
+[2019-03-25 17:56:26,728]-[INFO]-[日志信息]:-------正在测试Register模块里面第5条测试用例：输入错误的手机号
+[2019-03-25 17:56:26,729]-[INFO]-[日志信息]:测试数据是：{'CaseId': 5, 'Module': 'Register', 'Title': '输入错误的手机号', 'Url': 'http://47.107.168.87:8080/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'186887756569','pwd':'123456'}", 'ExpectedResult': "{'status':0,'code':'20109','data': None,'msg':'手机号码格式不正确'}"}
+[2019-03-25 17:56:26,945]-[INFO]-[日志信息]:实际结果：{'status': 0, 'code': '20109', 'data': None, 'msg': '手机号码格式不正确'}
